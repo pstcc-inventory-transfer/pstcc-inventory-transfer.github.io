@@ -7,9 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/pelli.svg">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>PSTCC Documentation</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href"carousel.css" rel="stylesheet">
+    <link href"main.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -92,7 +92,7 @@
 
       <div class="row featurette">
         <div class="col-md-12">
-          <h2 class="featurette-heading">Project Overview</h2>
+          <h2 class="featurette-heading text-center">Project Overview</h2>
           <p class="lead">
             Pellissippi State maintains a complete inventory database of their currently active technology assets. This database is managed via Microsoft Access. Multiple characteristics of each item are stored in the database such as: Room number, ID number, and Owner. The information in this database is periodically sent to the Tennessee Board of Regents for official book keeping. As one might imagine, this information must be accurate and well formed. <br><br>
             This project tasked our team with the creation of an inventory transfer interface for Pellissippi State technicians. Technicians must periodically move equipment from one room to another and update the database to reflect their changes. With their current system, technicians must record the information of the devices being transferred via pen & paper, carry that information to a desktop and manually alter the database with the new information. Our application effectively automates that process and reduces the hassle for the technicians.
@@ -105,7 +105,7 @@
 
       <div class="row featurette">
         <div class="col-md-12">
-          <h2 class="featurette-heading">Requirements</h2>
+          <h2 class="featurette-heading text-center">Requirements</h2>
           <p class="lead">
             <ol>
               <li>Allow technicians to enter device information from the field via web application </li>
@@ -122,7 +122,7 @@
 
       <div class="row featurette">
         <div class="col-md-12">
-          <h2 class="featurette-heading">Our Solution</h2>
+          <h2 class="featurette-heading text-center">Our Solution</h2>
           <p class="lead">Our solution offers technicians a web-based device independent application with which to submit transfers. The application functions via three distinct stages which are listed below.</p>
         </div>
       </div>
@@ -135,42 +135,145 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4 col-lg-push-2">
-          <img class="img-circle" src="http://www.femalefirst.co.uk/image-library/partners/bang/square/500/1/1326274128-4.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Jonathan Knight</h2>
+          <img class="img-circle center-block" src="http://www.femalefirst.co.uk/image-library/partners/bang/square/500/1/1326274128-4.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2 class="text-center">Jonathan Knight</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#jon">View More</button>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4 col-lg-push-2">
-          <img class="img-circle" src="https://i.pinimg.com/originals/37/8a/b3/378ab39ab22f96dd58f4f5e0b58320f7.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Jacob Simms</h2>
+          <img class="img-circle center-block" src="https://i.pinimg.com/originals/37/8a/b3/378ab39ab22f96dd58f4f5e0b58320f7.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2 class="text-center">Jacob Simms</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#jake">View More</button>
         </div><!-- /.col-lg-4 -->
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="http://www.placecage.com/500/500" alt="Generic placeholder image" width="140" height="140">
-          <h2>Zachary Mitchell</h2>
+          <img class="img-circle center-block" src="http://www.placecage.com/500/500" alt="Generic placeholder image" width="140" height="140">
+          <h2 class="text-center">Zachary Mitchell</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#zachary">View More</button>
+        </div><!-- /.col-lg-4 -->
+
+        <div id="ben" class="col-lg-4">
+          <img class="img-circle center-block" src="http://www.fillmurray.com/500/500" alt="Generic placeholder image" width="140" height="140">
+          <h2 class="text-center">Benjamin Millsaps</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#ben">View More</button>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
-          <img class="img-circle" src="http://www.fillmurray.com/500/500" alt="Generic placeholder image" width="140" height="140">
-          <h2>Benjamin Millsaps</h2>
+          <img class="img-circle center-block" style="object-fit: cover;" src="http://img3.wikia.nocookie.net/__cb20070114040526/starwars/images/9/9a/Palp_trustme.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2 class="text-center">Mathew Ratliff</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4">
-          <img class="img-circle" src="https://d919ce141ef35c47fc40-b9166a60eccf0f83d2d9c63fa65b9129.ssl.cf5.rackcdn.com/images/GettyImages-461499158.2e16d0ba.fill-300x300.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Mathew Ratliff</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#mathew">View More</button>
           <!-- Insert clickable modals above that extend information about developers. -->
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+
+
+      <!-- MODALS -->
+      <!-- Jon -->
+      <div id="jon" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Jacob -->
+      <div id="jake" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Zachary -->
+      <div id="zachary" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Benjamin -->
+      <div id="ben" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Mathew -->
+      <div id="mathew" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- FOOTER -->
       <footer>
@@ -185,11 +288,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
   </body>
 </html>
