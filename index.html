@@ -14,21 +14,8 @@
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <!-- Custom styles for this template -->
-    <link href"main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -36,7 +23,7 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-default navbar-fixed-top container">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -45,23 +32,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Project name</a>
+              <a class="navbar-brand" href="">Pellissippi Transfer Utility</a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div id="navbar">
+              <ul id="select" class="nav navbar-nav">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#requirements">Requirements</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#mgmt">Management Utilities</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-collapse collapse navbar-right">
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet the Developers<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="#jonk">Jon Knight</a></li>
+                    <li><a href="#jakes">Jacob Simms</a></li>
+                    <li><a href="#mat">Mathew Ratliff</a></li>
+                    <li><a href="#zach">Zachary Mitchell</a></li>
+                    <li><a href="#ben">Benjamin Millsaps</a></li>
                   </ul>
                 </li>
               </ul>
@@ -73,11 +62,11 @@
     </div>
 
 
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
+    <div class="jumbotron container" id="jumbo">
+      <div id="jumbo">
+        <h1>Welcome!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
       </div>
     </div>
 
@@ -88,9 +77,9 @@
 
     <div class="container marketing">
       <!-- START THE FEATURETTES -->
-      <hr class="featurette-divider">
+      <hr class="featurette-divider" style="margin: 40px 0px 0px 0px;">
 
-      <div class="row featurette">
+      <div class="row featurette" id="overview">
         <div class="col-md-12">
           <h2 class="featurette-heading text-center">Project Overview</h2>
           <p class="lead">
@@ -103,7 +92,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="requirements">
         <div class="col-md-12">
           <h2 class="featurette-heading text-center">Requirements</h2>
           <p class="lead">
@@ -120,10 +109,40 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="solution">
         <div class="col-md-12">
           <h2 class="featurette-heading text-center">Our Solution</h2>
           <p class="lead">Our solution offers technicians a web-based device independent application with which to submit transfers. The application functions via three distinct stages which are listed below.</p>
+          <img class="center-block" src="images/diagram.png">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="technology">
+        <div class="col-md-12">
+          <h2 class="featurette-heading text-center">The Technology Stack</h2>
+          <p class="lead">Our solution offers technicians a web-based device independent application with which to submit transfers. The application functions via three distinct stages which are listed below.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="mgmt">
+        <div class="col-md-12">
+          <h2 class="featurette-heading text-center">Team Management Utilities</h2>
+          <p class="lead text-center">
+            In order to collaborate in a functional way, we used Slack, Trello, and Github.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="center-block" src="images/slack.svg">
+        </div>
+        <div class="col-md-4">
+          <img class="center-block" src="images/trello.svg">
+        </div>
+        <div class="col-md-4">
+          <img class="center-block" src="images/github.svg">
         </div>
       </div>
 
@@ -134,21 +153,21 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4 col-lg-push-2">
+        <div class="col-lg-4 col-lg-push-2" id="jonk">
           <img class="img-circle center-block" src="http://www.femalefirst.co.uk/image-library/partners/bang/square/500/1/1326274128-4.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2 class="text-center">Jonathan Knight</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#jon">View More</button>
         </div><!-- /.col-lg-4 -->
 
-        <div class="col-lg-4 col-lg-push-2">
+        <div class="col-lg-4 col-lg-push-2" id="jakes">
           <img class="img-circle center-block" src="https://i.pinimg.com/originals/37/8a/b3/378ab39ab22f96dd58f4f5e0b58320f7.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2 class="text-center">Jacob Simms</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#jake">View More</button>
         </div><!-- /.col-lg-4 -->
       </div>
-      <div class="row">
+      <div class="row" id="zach">
         <div class="col-lg-4">
           <img class="img-circle center-block" src="http://www.placecage.com/500/500" alt="Generic placeholder image" width="140" height="140">
           <h2 class="text-center">Zachary Mitchell</h2>
@@ -160,10 +179,10 @@
           <img class="img-circle center-block" src="http://www.fillmurray.com/500/500" alt="Generic placeholder image" width="140" height="140">
           <h2 class="text-center">Benjamin Millsaps</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#ben">View More</button>
+          <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#benj">View More</button>
         </div><!-- /.col-lg-4 -->
 
-        <div class="col-lg-4">
+        <div class="col-lg-4"  id="mat">
           <img class="img-circle center-block" style="object-fit: cover;" src="http://img3.wikia.nocookie.net/__cb20070114040526/starwars/images/9/9a/Palp_trustme.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2 class="text-center">Mathew Ratliff</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -238,17 +257,23 @@
       </div>
       <!--  -->
       <!-- Benjamin -->
-      <div id="ben" class="modal fade" role="dialog">
+      <div id="benj" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
+              <img class="img-circle center-block" src="http://www.fillmurray.com/500/500" alt="Generic placeholder image" width="140" height="140">
+              <h2 class="modal-title text-center">Benjamin Millsaps</h2>
             </div>
             <div class="modal-body">
-              <p>Some text in the modal.</p>
+              <!-- Enter information here about benjamin and what he did on the project. -->
+              <p id="ben_info">Some text in the modal.</p>
+
+              <hr class="featurette-divider">
+
+              <p id="ben_proj">What ben did here </p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -294,5 +319,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Smoothly scroll down page once a link is pressed -->
+    <script>
+    $(document).ready(function() {
+      $("#select li a").click(function() {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+
+      });
+    });
+    </script>
   </body>
 </html>

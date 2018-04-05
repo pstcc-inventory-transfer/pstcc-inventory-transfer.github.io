@@ -4,7 +4,8 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: red;
+  background-color: purple;
 }
 
 
@@ -36,7 +37,9 @@ body {
 /*
 ADJUST JUMBOTRON DESIGN AND STYLE
 */
-.jumbotron{
+.jumbotron {
+  color: cyan;
+  background: #ff0066;
   margin-top: 53px;
   border-radius: 50px;
 }
@@ -72,12 +75,12 @@ ADJUST JUMBOTRON DESIGN AND STYLE
 }
 
 ::selection {
-  background: #fcd955;
-  color: #0066cc;
+  background: purple;
+  color: white;
 }
 ::-moz-selection {
-  background: #fcd955; /* Gecko Browsers */
-  color: #0066cc;
+  background: white; /* Gecko Browsers */
+  color: purple;
 }
 
 /* RESPONSIVE CSS
@@ -96,6 +99,7 @@ ADJUST JUMBOTRON DESIGN AND STYLE
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
+    float: none;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
@@ -104,29 +108,18 @@ ADJUST JUMBOTRON DESIGN AND STYLE
     border-bottom-right-radius: 15px;
   }
 
-  /* Change default navbar text color */
-  .navbar-default .navbar-brand {
-    color: #fcd955;
-  }
-  /* Change navbar brand color on hover */
-  .navbar-default .navbar-brand:hover,
-  .navbar-default .navbar-brand:focus {
-    color: #fcd955;
-    background-color: #0066cc;
-    filter: brightness(115%);
-    border-bottom-left-radius: 14px;
+  /* Style navbar */
+  #navbar {
+    color: white;
   }
   .navbar-default {
-    background-color: #0066cc;
+    background-color: purple;
     color: white;
     border-bottom: solid medium #fcd955;
   }
-  .navbar-default .navbar-nav > li > a {
-    color: #fcd955;
-}
   .nav >  li:hover {
     color: white;
-    background-color: #1975d1;
+    background-color: purple;
     filter: brightness(115%);
   }
   .nav > .dropdown:hover {
@@ -137,12 +130,8 @@ ADJUST JUMBOTRON DESIGN AND STYLE
     font-size: 50px;
   }
   .dropdown-menu {
-    color: white;
+
   }
-  .navbar-default > .navbar-nav > li .active{
-    background-color: black;
-    filter: brightness(115%);
-}
 }
 
 @media (min-width: 992px) {
