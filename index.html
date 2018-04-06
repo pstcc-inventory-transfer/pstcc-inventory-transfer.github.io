@@ -26,23 +26,25 @@
         <nav class="navbar navbar-default navbar-fixed-top container">
           <div class="container">
             <div class="navbar-header">
+              <!-- Make navbar responsive on mobile devices -->
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
               <a class="navbar-brand" href="">Pellissippi Transfer Utility</a>
             </div>
-            <div id="navbar">
-              <ul id="select" class="nav navbar-nav">
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#requirements">Requirements</a></li>
                 <li><a href="#solution">Solution</a></li>
                 <li><a href="#technology">Technology</a></li>
                 <li><a href="#mgmt">Management Utilities</a></li>
               </ul>
-              <ul class="nav navbar-nav navbar-collapse collapse navbar-right">
+              <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet the Developers<span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -77,7 +79,7 @@
 
     <div class="container marketing">
       <!-- START THE FEATURETTES -->
-      <hr class="featurette-divider" style="margin: 40px 0px 0px 0px;">
+      <hr class="featurette-divider">
 
       <div class="row featurette" id="overview">
         <div class="col-md-12">
@@ -95,16 +97,20 @@
       <div class="row featurette" id="requirements">
         <div class="col-md-12">
           <h2 class="featurette-heading text-center">Requirements</h2>
-          <p class="lead">
-            <ol>
+        </div>
+
+        <div id="outer" class="col-md-12 lead">
+          <div class="tbl">
+            <ul id="list">
               <li>Allow technicians to enter device information from the field via web application </li>
               <li>Limit the technician’s ability to directly alter the database</li>
               <li>Assure the accuracy and validity of technician-entered information</li>
               <li>Seamlessly integrate our solution with the Microsoft Access forms that are currently in place</li>
               <li>Integrate a barcode scanner for use on mobile devices</li>
-            </ol>
-          </p>
+            </ul>
+          </div>
         </div>
+
       </div>
 
       <hr class="featurette-divider">
@@ -113,7 +119,43 @@
         <div class="col-md-12">
           <h2 class="featurette-heading text-center">Our Solution</h2>
           <p class="lead">Our solution offers technicians a web-based device independent application with which to submit transfers. The application functions via three distinct stages which are listed below.</p>
-          <img class="center-block" src="images/diagram.png">
+          <img class="center-block col-xs-12" src="images/diagram.png">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="interface">
+        <div class="col-md-12">
+          <h2 class="featurette-heading text-center">User Interface</h2>
+          <p class="lead">
+            Upon visiting the web application, technicians are greeted with the login form seen below. The passwords are fully encrypted and can be changed via a GUI application located on the server. More information on the password system can be found here.
+          </p>
+          <img class="center-block col-xs-12" src="images/login.png">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="mobile">
+        <div class="col-md-12">
+          <h2 class="featurette-heading text-center">Validity Checking</h2>
+          <p class="lead">
+            When the technician enters the ID number of a device, the application searches the inventory database and returns the current details of that device. The details returned include: Model, Current Owner, Current Room #, and Current Department. Allowing the technician to see these details, lets them ensure they are moving the correct item.
+          </p>
+          <img class="center-block col-xs-12" src="images/validModal.png">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="valid">
+        <div class="col-md-12">
+          <h2 class="featurette-heading text-center">Mobile Functionality</h2>
+          <p class="lead">
+            When the technician enters the ID number of a device, the application searches the inventory database and returns the current details of that device. The details returned include: Model, Current Owner, Current Room #, and Current Department. Allowing the technician to see these details, lets them ensure they are moving the correct item.
+          </p>
+          <img class="center-block col-xs-12 col-xs-push-3 col-md-push-3" src="images/mobileBarcode.png" style="width: 50%; height: 50%;">
         </div>
       </div>
 
@@ -122,7 +164,33 @@
       <div class="row featurette" id="technology">
         <div class="col-md-12">
           <h2 class="featurette-heading text-center">The Technology Stack</h2>
-          <p class="lead">Our solution offers technicians a web-based device independent application with which to submit transfers. The application functions via three distinct stages which are listed below.</p>
+          <!-- Went with a table because it was pretty much the only way I could get it to actually center. -->
+          <table class="lead col-xs-12 col-md-12 col-md-pull-3" style="text-align: center;">
+
+            <tr>
+              <th> Languages </th>
+              <th> External Libraries </th>
+            </tr>
+
+            <tr>
+              <td> HTML/CSS </td>
+              <td> Bootstrap </td>
+            </tr>
+            <tr>
+              <td> JavaScript/jQuery </td>
+              <td> QuaggaJS </td>
+            </tr>
+
+            <tr>
+              <td> PHP </td>
+              <td> FPDF </td>
+            </tr>
+
+            <tr>
+              <td> C# </td>
+              <td> Bootstrap-Select </td>
+            </tr>
+          </table>
         </div>
       </div>
 
@@ -135,14 +203,14 @@
             In order to collaborate in a functional way, we used Slack, Trello, and Github.
           </p>
         </div>
-        <div class="col-md-4">
-          <img class="center-block" src="images/slack.svg">
+        <div class="col-md-4 col-xs-4">
+          <img class="center-block img-responsive" src="images/slack.svg">
         </div>
-        <div class="col-md-4">
-          <img class="center-block" src="images/trello.svg">
+        <div class="col-md-4 col-xs-4">
+          <img class="center-block img-responsive" src="images/trello.svg">
         </div>
-        <div class="col-md-4">
-          <img class="center-block" src="images/github.svg">
+        <div class="col-md-4 col-xs-4">
+          <img class="center-block img-responsive" src="images/github.svg">
         </div>
       </div>
 
@@ -153,37 +221,37 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4 col-lg-push-2" id="jonk">
-          <img class="img-circle center-block" src="http://www.femalefirst.co.uk/image-library/partners/bang/square/500/1/1326274128-4.jpg" alt="Generic placeholder image" width="140" height="140">
+        <div class="col-lg-4 col-lg-push-2 col-xs-12" id="jonk">
+          <img class="img-circle center-block img-responsive" src="http://www.femalefirst.co.uk/image-library/partners/bang/square/500/1/1326274128-4.jpg" alt="Generic placeholder image" width="150" height="150">
           <h2 class="text-center">Jonathan Knight</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#jon">View More</button>
         </div><!-- /.col-lg-4 -->
 
-        <div class="col-lg-4 col-lg-push-2" id="jakes">
-          <img class="img-circle center-block" src="https://i.pinimg.com/originals/37/8a/b3/378ab39ab22f96dd58f4f5e0b58320f7.jpg" alt="Generic placeholder image" width="140" height="140">
+        <div class="col-lg-4 col-lg-push-2 col-xs-12" id="jakes">
+          <img class="img-circle center-block img-responsive" src="https://i.pinimg.com/originals/37/8a/b3/378ab39ab22f96dd58f4f5e0b58320f7.jpg" alt="Generic placeholder image" width="150" height="150">
           <h2 class="text-center">Jacob Simms</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#jake">View More</button>
         </div><!-- /.col-lg-4 -->
       </div>
       <div class="row" id="zach">
-        <div class="col-lg-4">
-          <img class="img-circle center-block" src="http://www.placecage.com/500/500" alt="Generic placeholder image" width="140" height="140">
+        <div class="col-lg-4 col-xs-12">
+          <img class="img-circle center-block img-responsive" src="http://www.placecage.com/500/500" alt="Generic placeholder image" width="150" height="150">
           <h2 class="text-center">Zachary Mitchell</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#zachary">View More</button>
         </div><!-- /.col-lg-4 -->
 
-        <div id="ben" class="col-lg-4">
-          <img class="img-circle center-block" src="http://www.fillmurray.com/500/500" alt="Generic placeholder image" width="140" height="140">
+        <div id="ben" class="col-lg-4 col-xs-12">
+          <img class="img-circle center-block img-responsive" src="http://www.fillmurray.com/500/500" alt="Generic placeholder image" width="150" height="150">
           <h2 class="text-center">Benjamin Millsaps</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#benj">View More</button>
         </div><!-- /.col-lg-4 -->
 
-        <div class="col-lg-4"  id="mat">
-          <img class="img-circle center-block" style="object-fit: cover;" src="http://img3.wikia.nocookie.net/__cb20070114040526/starwars/images/9/9a/Palp_trustme.jpg" alt="Generic placeholder image" width="140" height="140">
+        <div class="col-lg-4 col-xs-12"  id="mat">
+          <img class="img-circle center-block img-responsive" src="https://pbs.twimg.com/profile_images/825454009217454081/oFSc8Y7U_400x400.jpg" alt="Generic placeholder image" width="150" height="150">
           <h2 class="text-center">Mathew Ratliff</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <button type="button" class="btn btn-default btn-lg center-block" data-toggle="modal" data-target="#mathew">View More</button>
@@ -307,7 +375,7 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p class="pull-right"><a href="#jumbo">Back to top</a></p>
         <p>&copy; 2018 Jon & Tron, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
@@ -324,7 +392,24 @@
     $(document).ready(function() {
       $("#select li a").click(function() {
         $(this).parent().addClass('active').siblings().removeClass('active');
+      });
 
+      $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+
+      // Add slideDown animation to Bootstrap dropdown when expanding.
+      $('.dropdown').on('show.bs.dropdown', function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+      });
+
+      // Add slideUp animation to Bootstrap dropdown when collapsing.
+      $('.dropdown').on('hide.bs.dropdown', function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
       });
     });
     </script>

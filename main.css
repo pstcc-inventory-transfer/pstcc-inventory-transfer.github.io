@@ -4,7 +4,7 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  background-color: #3399ff;
 }
 
 
@@ -37,8 +37,16 @@ body {
 ADJUST JUMBOTRON DESIGN AND STYLE
 */
 .jumbotron{
-  margin-top: 53px;
-  border-radius: 50px;
+  text-align: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background: #0059b2;
+  color: #e2b203;
+}
+
+.lead {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /* MARKETING CONTENT
@@ -61,7 +69,9 @@ ADJUST JUMBOTRON DESIGN AND STYLE
 ------------------------- */
 
 .featurette-divider {
-  margin: 40px 0px; /* Space out the Bootstrap <hr> more */
+  margin: 20px 0px 20px 0px; /* Space out the Bootstrap <hr> more */
+  border-color: #0066cc;
+  border-width: 3px;
 }
 
 /* Thin out the marketing headings */
@@ -71,6 +81,37 @@ ADJUST JUMBOTRON DESIGN AND STYLE
   letter-spacing: -1px;
 }
 
+/* Center table */
+table {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+table th {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+table td {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.tbl {
+  display: table;
+  margin: 0 auto;
+}
+ul.list {
+  min-width: 696px;
+	list-style: none;
+	/* padding-top: 20px; */
+}
+ul.list li {
+  display: inline-block;
+}
+/* Change the color whenever highlighted */
 ::selection {
   background: #fcd955;
   color: #0066cc;
@@ -87,7 +128,6 @@ ADJUST JUMBOTRON DESIGN AND STYLE
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
-    color: white;
   }
   .navbar-wrapper .container {
     padding-right: 15px;
@@ -104,7 +144,7 @@ ADJUST JUMBOTRON DESIGN AND STYLE
     border-bottom-right-radius: 15px;
   }
 
-  /* Change default navbar text color */
+  /* Change default navbar brand text color */
   .navbar-default .navbar-brand {
     color: #fcd955;
   }
@@ -142,7 +182,8 @@ ADJUST JUMBOTRON DESIGN AND STYLE
   .navbar-default > .navbar-nav > li .active{
     background-color: black;
     filter: brightness(115%);
-}
+  }
+
 }
 
 @media (min-width: 992px) {
