@@ -7,7 +7,9 @@ body {
   background-color: #f5f5f0;
 }
 
-
+#first_dropdown{
+  border-radius: 0px;
+}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 /* Navbar positioning foo */
