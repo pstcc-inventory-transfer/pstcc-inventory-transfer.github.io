@@ -38,13 +38,13 @@ body {
   color: ghostwhite;
 }
 /* Change navbar brand color on hover */
-.navbar-default .navbar-brand:hover,
+/* .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: ghostwhite;
   background-color: #0066cc;
   filter: brightness(115%);
   border-bottom-left-radius: 15px;
-}
+} */
 .navbar-default {
   background-color: #0066cc;
   color: white;
