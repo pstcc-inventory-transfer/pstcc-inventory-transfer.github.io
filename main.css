@@ -151,28 +151,6 @@ ADJUST JUMBOTRON DESIGN AND STYLE
   letter-spacing: -1px;
 }
 
-/* Center table */
-table {
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-
-}
-table th {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bolder;
-}
-
-table td {
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.tbl {
-  display: table;
-  margin: 0 auto;
-}
 ul.list {
   min-width: 696px;
 	list-style: none;
@@ -190,7 +168,30 @@ ul.list li {
   background: #fcd955; /* Gecko Browsers */
   color: #0066cc;
 }
+h4 {
+  font-weight: 600;
+}
 
+.panel-hr {
+  width: 50%;
+  border-width: 3px;
+}
+
+.panel-default {
+  border-radius: 15px;
+  margin: 10px 5px;
+  padding: 0px;
+}
+.panel > .panel-heading {
+  color: white;
+  background-color: #0066cc;
+  border-radius: 15px;
+  border-width: medium;
+  border-color: #fcd955;
+}
+.panel > .panel-body {
+  color: #0066cc;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
