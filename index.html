@@ -75,13 +75,14 @@
       </div>
     </div>
 
-
-    <div class="jumbotron container" id="top">
-      <div id="jumbo">
-        <h1>Welcome!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
-      </div>
+    <!-- Insert image header here and a link to the github repo. -->
+    <div class="container bg" id="top">
+        <!-- header image here. -->
+        <img class="center-block img-responsive img-rounded" src="images/main-panel_2.png">
+        <!-- Link to github repo here. -->
+        <form action="https://github.com/pstcc-inventory-transfer/pstcc-inventory-transfer" target="_blank">
+          <button type="submit" class="btn btn-primary btn-lg center-block">View The Repo!</button>
+        </form>
     </div>
 
 
@@ -106,23 +107,24 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette" id="requirements">
-        <div class="col-md-12">
-          <h2 class="featurette-heading text-center">Requirements</h2>
+      <div class="row featurette text-center" id="requirements">
+        <div class="col-md-12 text-center">
+          <h2 class="featurette-heading">Requirements</h2>
         </div>
 
-        <div id="outer" class="col-md-12 lead">
-          <div class="tbl">
-            <ul id="list">
-              <li>Allow technicians to enter device information from the field via web application </li>
-              <li>Limit the technician’s ability to directly alter the database</li>
-              <li>Assure the accuracy and validity of technician-entered information</li>
-              <li>Seamlessly integrate our solution with the Microsoft Access forms that are currently in place</li>
-              <li>Integrate a barcode scanner for use on mobile devices</li>
-            </ul>
+        <div class="col-xs-12 col-md-12 panel panel-default" id="requirements-panel">
+          <div class="panel-body">
+            <h4>Allow technicians to enter device information from the field via web application </h4>
+            <hr class="panel-hr">
+            <h4>Limit the technician’s ability to directly alter the database</h4>
+            <hr class="panel-hr">
+            <h4>Assure the accuracy and validity of technician-entered information</h4>
+            <hr class="panel-hr">
+            <h4>Seamlessly integrate our solution with the Microsoft Access forms that are currently in place</h4>
+            <hr class="panel-hr">
+            <h4>Integrate a barcode scanner for use on mobile devices</h4>
           </div>
         </div>
-
       </div>
 
       <hr class="featurette-divider">
@@ -179,16 +181,16 @@
           <!-- Went with a table because it was pretty much the only way I could get it to actually center. -->
           <div class="col-xs-12 col-md-5 col-md-push-1 panel panel-default">
             <div class="panel-heading">
-              <h2> Languages </h2>
+              <h2>Languages</h2>
             </div>
             <div class="panel-body">
-              <h4> HTML/CSS </h4>
+              <h4>HTML/CSS</h4>
               <hr class="panel-hr">
-              <h4> JavaScript/jQuery </h4>
+              <h4>JavaScript/jQuery</h4>
               <hr class="panel-hr">
-              <h4> PHP </h4>
+              <h4>PHP</h4>
               <hr class="panel-hr">
-              <h4> C# </h4>
+              <h4>C#</h4>
             </div>
           </div>
 
@@ -197,13 +199,13 @@
               <h2>External Libraries</h2>
             </div>
             <div class="panel-body">
-              <h4> Bootstrap </h4>
+              <h4>Bootstrap</h4>
               <hr class="panel-hr">
-              <h4> QuaggaJS  </h4>
+              <h4>QuaggaJS</h4>
               <hr class="panel-hr">
-              <h4> FPDF </h4>
+              <h4>FPDF</h4>
               <hr class="panel-hr">
-              <h4> Bootstrap-Select  </h4>
+              <h4>Bootstrap-Select</h4>
             </div>
           </div>
         </div>
@@ -390,7 +392,7 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#jumbo">Back to top</a></p>
+        <p class="pull-right"><a href="#top">Back to top</a></p>
         <p>&copy; 2018 Jon & Tron, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 

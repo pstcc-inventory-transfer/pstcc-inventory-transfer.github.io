@@ -3,8 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
-  /* background-color: ghostwhite; */
+  padding-top: 40px;
 }
 
 #first_dropdown{
@@ -100,20 +99,28 @@ body {
 /*
 ADJUST JUMBOTRON DESIGN AND STYLE
 */
+
+#top {
+  width: 100%;
+  background-size: 100%
+}
 .jumbotron{
+  /* background: #0059b2; */
+  background: white;
+}
+
+div .bg {
   text-align: center;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  background: #0059b2;
-  color: ghostwhite
+  align-items: center;
 }
 
-#jumbo {
-  background-image: url("images/pelli_50.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.btn {
+  border: none;
+  color: white;
+  margin: 15px auto;
+  padding: 15px 32px;
+  font-size: 16px;
 }
-
 .lead {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -150,15 +157,21 @@ ADJUST JUMBOTRON DESIGN AND STYLE
   line-height: 1;
   letter-spacing: -1px;
 }
+/* Remove border style from requirements panel, and change text color. */
+#requirements-panel {
+  border-style: none;
+}
+#requirements-panel .panel-hr {
+  width: 50%;
+  border-color: #999999;
+}
+#requirements-panel .panel-body {
+  color: #333333;
+}
+#requirements-panel h4 {
+  font-weight: normal;
+}
 
-ul.list {
-  min-width: 696px;
-	list-style: none;
-	/* padding-top: 20px; */
-}
-ul.list li {
-  display: inline-block;
-}
 /* Change the color whenever highlighted */
 ::selection {
   background: #fcd955;
@@ -175,6 +188,7 @@ h4 {
 .panel-hr {
   width: 50%;
   border-width: 3px;
+  border-color: #dddddd;
 }
 
 .panel-default {
@@ -191,6 +205,11 @@ h4 {
 }
 .panel > .panel-body {
   color: #0066cc;
+}
+
+div .row {
+  margin-top: 0px;
+  padding-bottom: -10px;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -257,6 +276,18 @@ h4 {
     filter: brightness(115%);
   }
 
+  div .bg {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .btn {
+    border: none;
+    color: white;
+    margin: 15px auto;
+    padding: 15px 32px;
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 992px) {
