@@ -211,6 +211,14 @@ div .row {
   margin-top: 0px;
   padding-bottom: -10px;
 }
+
+#ben {
+  border-radius: 50%;
+}
+
+iframe {
+  margin: 0 auto;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
